@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>个人简历 | 胡俊杰</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(120deg, #020617, #1e293b);
+            color: #1f2937;
+        }
+
+        /* 左侧导航栏 */
+        .side-nav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 240px;
+            height: 100vh;
+            background: linear-gradient(180deg, #020617, #0f172a);
+            padding: 40px 25px;
+            color: #e5e7eb;
+        }
+
+        .side-nav h2 {
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: #facc15;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .side-nav ul {
+            list-style: none;
+        }
+
+        .side-nav li {
+            margin-bottom: 22px;
+        }
+
+        .side-nav a {
+            text-decoration: none;
+            color: #e5e7eb;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .side-nav a:hover {
+            color: #facc15;
+            padding-left: 6px;
+        }
+
+        .wrapper {
+            margin-left: 240px;
+            padding: 80px 70px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            max-width: 1400px;
+            margin: auto;
+            background: #f8fafc;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 35px 70px rgba(0,0,0,0.35);
+        }
+
+        .content {
+            padding: 70px 80px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        section h3 {
+            font-size: 26px;
+            margin-bottom: 30px;
+            color: #020617;
+            position: relative;
+        }
+
+        section h3::before {
+            content: "";
+            position: absolute;
+            left: -26px;
+            top: 6px;
+            width: 6px;
+            height: 28px;
+            background: #facc15;
+            border-radius: 3px;
+        }
+
+        .desc {
+            font-size: 18px;
+            line-height: 2.1;
+            color: #334155;
+            margin-bottom: 26px;
+            text-align: justify;
+        }
+
+        .block {
+            background: #f1f5f9;
+            padding: 26px 30px;
+            border-radius: 16px;
+            margin-bottom: 26px;
+        }
+
+        .block h4 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #020617;
+        }
+
+        .block p {
+            font-size: 17px;
+            line-height: 2;
+            color: #475569;
+            text-align: justify;
+        }
+
+        /* 右侧信息栏 */
+        .info-panel {
+            background: linear-gradient(180deg, #020617, #0f172a);
+            color: #e5e7eb;
+            padding: 50px 30px;
+        }
+
+        .photo img {
+            width: 200px;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 40px;
+            border-radius: 16px;
+        }
+
+        .info-panel h3 {
+            font-size: 22px;
+            color: #facc15;
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .info-panel p {
+            font-size: 17px;
+            line-height: 2;
+            margin-bottom: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 1100px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .info-panel {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 左侧导航 -->
+<aside class="side-nav">
+    <h2>简历导航</h2>
+    <ul>
+        <li><a href="#profile">个人简介</a></li>
+        <li><a href="#skills">专业技能</a></li>
+        <li><a href="#intern">实习经历</a></li>
+        <li><a href="#award">获奖情况</a></li>
+        <li><a href="#future">发展方向</a></li>
+    </ul>
+</aside>
+
+<div class="wrapper">
+    <div class="container">
+
+        <!-- 主内容 -->
+        <main class="content">
+
+            <section id="profile">
+                <h3>个人简介</h3>
+                <p class="desc">
+                    本人就读于大连海洋大学数据科学与大数据技术专业，在校期间系统学习了数据结构、
+                    数据库原理、统计学基础、Python 程序设计以及大数据处理技术等核心课程。
+                </p>
+                <p class="desc">
+                    在学习过程中，逐步形成了对数据分析流程和数据工程体系的整体理解，
+                    注重理论与实践相结合，培养了良好的工程化思维能力。
+                </p>
+            </section>
+
+            <section id="skills">
+                <h3>专业技能与技术能力</h3>
+
+                <div class="block">
+                    <h4>数据分析与编程基础</h4>
+                    <p>
+                        熟悉 Python、SQL 的基本使用方式，能够完成数据清洗、统计分析与结果整理工作，
+                        对数据在实际业务中的应用具有初步认识。
+                    </p>
+                </div>
+
+                <div class="block">
+                    <h4>Web 前端基础</h4>
+                    <p>
+                        掌握 HTML、CSS 的基本页面结构与样式控制方法，
+                        能够独立完成静态网页布局设计，并注重页面的可读性和视觉效果。
+                    </p>
+                </div>
+            </section>
+
+            <section id="intern">
+                <h3>实习经历</h3>
+
+                <div class="block">
+                    <h4>阿里巴巴集团 · 数据分析实习生</h4>
+                    <p>
+                        参与电商平台用户行为数据分析项目，协助完成数据整理与分析工作，
+                        对企业级数据处理流程有了更加直观的理解。
+                    </p>
+                </div>
+
+                <div class="block">
+                    <h4>腾讯科技 · 大数据平台实习生</h4>
+                    <p>
+                        接触 Hadoop、Spark 等大数据技术框架，
+                        对大规模数据系统的稳定性和规范性有了初步认识。
+                    </p>
+                </div>
+            </section>
+
+            <section id="award">
+                <h3>获奖情况</h3>
+                <p class="desc">
+                    在校期间学习态度端正，综合表现良好，
+                    曾获得校级奖学金及多项综合素质类荣誉。
+                </p>
+            </section>
+
+            <section id="future">
+                <h3>未来发展方向</h3>
+                <p class="desc">
+                    未来希望继续深耕数据分析与数据工程方向，
+                    不断提升专业能力，逐步成长为具备实践能力的数据技术人才。
+                </p>
+            </section>
+
+        </main>
+
+        <!-- 右侧基本信息 -->
+        <aside class="info-panel">
+            <div class="photo">
+                <img src=a831812396c445c647424d15ea233705.jpg alt="个人照片">
+            </div>
+            <h3>基本信息</h3>
+            <p>姓名：胡俊杰</p>
+            <p>性别：男</p>
+            <p>专业：数据科学与大数据技术</p>
+            <p>学校：大连海洋大学</p>
+            <p>联系电话：16578525564</p>
+        </aside>
+
+    </div>
+</div>
+
+<footer>
+    © 2025 个人简历网页设计 | 数据科学与大数据技术
+</footer>
+
+</body>
+</html>
